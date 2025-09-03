@@ -2,6 +2,12 @@
 
 A professional-grade equity market analysis tool designed for global equity markets including TSX, NYSE, and NASDAQ. This application provides comprehensive signal generation, volatility analysis, and market quality metrics suitable for quantitative analysts and institutional traders.
 
+## 🌐 **Live Application**
+
+**🚀 [Try the Equity Signal Analyzer Now](https://equity-signal-analyzer-bye2ixgkh8snlduwp9utrb.streamlit.app/)**
+
+*Analyze any equity ticker with professional-grade technical analysis and market metrics*
+
 ## 🎯 Overview
 
 The Equity Signal Analyzer transforms raw market data into actionable insights through advanced technical analysis, volatility regime classification, and liquidity assessment. Built with institutional-grade analytics, it provides the tools used by quantitative analysts at major financial institutions.
@@ -71,24 +77,21 @@ python analyze.py --ticker AAPL --start 2023-01-01 --end 2023-12-31
 
 ## 🌐 Cloud Deployment
 
-This application is designed for easy deployment to Google Cloud Platform:
+This application is deployed on **Streamlit Cloud** for easy access:
 
-### Google Cloud App Engine
+### Streamlit Cloud (Current)
 
-1. **Follow the deployment guide**: See `CLOUD_CONSOLE_DEPLOYMENT.md`
-2. **Deploy using Cloud Console**: No command line required
-3. **Get your public URL**: `https://your-project-id.appspot.com`
+- **Live URL**: [https://equity-signal-analyzer-bye2ixgkh8snlduwp9utrb.streamlit.app/](https://equity-signal-analyzer-bye2ixgkh8snlduwp9utrb.streamlit.app/)
+- **Deployment**: Automatic from GitHub repository
+- **Updates**: Automatic deployment on code changes
 
-### Docker Deployment
+### Local Development
 
 ```bash
-# Build the container
-docker build -t equity-analyzer .
-
 # Run locally
-docker run -p 8501:8501 equity-analyzer
+streamlit run dashboard.py
 
-# Deploy to any cloud platform
+# Access at http://localhost:8501
 ```
 
 ## 📊 Usage Examples
