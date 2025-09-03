@@ -86,6 +86,17 @@ class StreamlitDashboard:
         st.markdown('<h1 class="main-header">📈 Equity Signal Analyzer</h1>', unsafe_allow_html=True)
         st.markdown("Professional equity market analysis and signal generation")
         
+        # GitHub link
+        st.markdown("""
+        <div style="text-align: center; margin: 10px 0;">
+            <a href="https://github.com/dev7878/equity-signal-analyzer" target="_blank" style="text-decoration: none;">
+                <span style="background-color: #24292e; color: white; padding: 8px 16px; border-radius: 6px; font-size: 14px; font-weight: 500;">
+                    🔗 View Source Code on GitHub
+                </span>
+            </a>
+        </div>
+        """, unsafe_allow_html=True)
+        
         # Sidebar
         self._create_sidebar()
         
@@ -143,6 +154,18 @@ class StreamlitDashboard:
             st.session_state['end_date'] = end_date.strftime('%Y-%m-%d')
             st.session_state['include_benchmark'] = include_benchmark
             st.session_state['show_advanced_metrics'] = show_advanced_metrics
+        
+        # GitHub link in sidebar
+        st.sidebar.markdown("---")
+        st.sidebar.markdown("""
+        <div style="text-align: center;">
+            <a href="https://github.com/dev7878/equity-signal-analyzer" target="_blank" style="text-decoration: none;">
+                <span style="background-color: #24292e; color: white; padding: 6px 12px; border-radius: 4px; font-size: 12px; font-weight: 500;">
+                    🔗 GitHub
+                </span>
+            </a>
+        </div>
+        """, unsafe_allow_html=True)
     
     def _display_welcome(self):
         """Display welcome screen"""
